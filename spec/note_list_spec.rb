@@ -11,15 +11,15 @@ describe "NoteList" do
     @note_list.add(@note3)
   end
 
-  it "should create an instance of the TodoList class" do
+  it "should create an instance of the NoteList class" do
     expect(@note_list).to be_instance_of(NoteList)
   end
 
-  it "should allow a Todo to be added to the TodoList" do
+  it "should allow a Note to be added to the NoteList" do
     expect(@note_list.list).to include("Testing Note", "Testing2 Note2", "Testing3 Note3")
   end
 
-  it "should allow the user to print the list of Todos" do
+  it "should allow the user to print the list of Notes" do
     expect do @note_list.print end.to output("* Testing Note\n* Testing2 Note2\n* Testing3 Note3\n").to_stdout
   end
 
