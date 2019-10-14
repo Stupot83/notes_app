@@ -5,4 +5,16 @@ class Note
     @title = title
     @body = body
   end
+
+  def title
+    @title
+  end
+
+  def body
+    @body
+  end
+
+  def text
+    return @title
+  end
 end

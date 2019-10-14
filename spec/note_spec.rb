@@ -1,4 +1,4 @@
-require "note"
+Dir["./lib/*.rb"].each { |file| require file }
 
 describe Note do
   before :each do
@@ -6,7 +6,7 @@ describe Note do
   end
 
   it "successfully instantiates the Note class" do
-    expect(@note).to be_kind_of(Note)
+    expect(@note).to be_instance_of(Note)
   end
 
   it "should have a title" do
