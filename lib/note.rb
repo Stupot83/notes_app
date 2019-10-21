@@ -1,3 +1,5 @@
+require_relative "note_list"
+
 class Note
   attr_reader :title, :body
 

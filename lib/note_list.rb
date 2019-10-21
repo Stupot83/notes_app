@@ -1,12 +1,14 @@
+require "note"
+
 class NoteList
-  attr_reader :list
+  attr_accessor :list
 
   def initialize
     @list = []
   end
 
-  def add(item)
-    @list.push(item.text)
+  def add(note)
+    @list.push(note.text)
   end
 
   def print
